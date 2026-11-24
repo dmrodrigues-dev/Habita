@@ -38,7 +38,11 @@ public class MenuVisitante {
     private final MoradorRepository moradorRepository;
 
     public MenuVisitante() {
-        this.scanner = new Scanner(System.in);
+        this(new Scanner(System.in));
+    }
+
+    public MenuVisitante(Scanner scanner) {
+        this.scanner = scanner;
 
         this.visitanteRepository = new VisitanteRepository();
         this.moradorRepository = new MoradorRepository();

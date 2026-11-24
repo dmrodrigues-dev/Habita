@@ -23,7 +23,11 @@ public class MenuReserva {
     private final AreaComumRepository areaRepository;
 
     public MenuReserva() {
-        this.scanner = new Scanner(System.in);
+        this(new Scanner(System.in));
+    }
+
+    public MenuReserva(Scanner scanner) {
+        this.scanner = scanner;
 
         ReservaRepository reservaRepository = new ReservaRepository();
         CobrancaRepository cobrancaRepository = new CobrancaRepository();

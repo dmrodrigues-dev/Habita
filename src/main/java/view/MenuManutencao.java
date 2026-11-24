@@ -37,8 +37,12 @@ public class MenuManutencao {
      * Inicializa o serviço e o leitor de dados.
      */
     public MenuManutencao() {
+        this(new Scanner(System.in));
+    }
+
+    public MenuManutencao(Scanner scanner) {
+        this.scanner = scanner;
         this.service = new ManutencaoService();
-        this.scanner = new Scanner(System.in);
     }
 
     /*
