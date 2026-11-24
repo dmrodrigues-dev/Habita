@@ -37,6 +37,27 @@
             <version>9.8.1</version>
             <type>pom</type>
         </dependency>
+
+        <!-- Source: https://mvnrepository.com/artifact/com.google.apis/google-api-services-drive -->
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-drive</artifactId>
+            <version>v3-rev20261106-2.9.2</version>
+        </dependency>
+
+        <!-- Source: https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client -->
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client-jetty</artifactId>
+            <version>1.39.0</version>
+        </dependency>
+
+        <!-- Source: https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>2.9.2</version>
+        </dependency>
     </dependencies>
 
     <build>
